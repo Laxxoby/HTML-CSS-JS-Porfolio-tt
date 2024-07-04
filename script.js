@@ -6,7 +6,14 @@ function toggleMenu() {
     icon.classList.toggle("open");
 }
 
-document.addEventListener('DOMContentLoaded', function () { 
+// Una vez cargado el DOM se crea los eventos .onclick
 
-    //document.querySelector('.menu-links').onclick = toggleMenu;
+document.addEventListener('DOMContentLoaded', function () { 
+    const menuLinks = document.querySelectorAll('.menu-links a');
+
+    document.querySelector('.hamburger-icon').onclick = toggleMenu;
+
+    menuLinks.forEach(li => {
+        li.onclick = toggleMenu;
+    })
 });
