@@ -299,7 +299,7 @@ section {
     flex: 1;
     background: white;
     border-radius: 2rem;
-    border: rgb(163, 163,163) 0.1rem solid;
+    border: rgb(163, 163, 163) 0.1rem solid;
     text-align: center;
 }
 
@@ -307,4 +307,10 @@ section {
     gap: 4rem;
     height: 400px;
     margin: auto 0;
+}
+
+/* EXPERIENCE SECTION */
+
+#experience {
+    position: relative;
 }
